@@ -8,4 +8,4 @@ python-dotenv>=1.0.0
 requests>=2.31.0
 pydantic>=2.5.0
 langchain-core>=0.3.0
-typing-extensions>=4.8.0
+typing-extensions>=4.8.0"# Updated $(date)" 
