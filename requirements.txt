@@ -1,11 +1,10 @@
-fastapi>=0.104.0
-uvicorn[standard]>=0.24.0
-copilotkit>=1.0.0
-langgraph>=0.2.0
-langchain-google-genai>=1.0.0
-google-generativeai>=0.7.0
-python-dotenv>=1.0.0
-requests>=2.31.0
-pydantic>=2.5.0
-langchain-core>=0.3.0
-typing-extensions>=4.8.0"# Updated $(date)" 
+"fastapi==0.117.1" 
+"uvicorn[standard]==0.37.0" 
+"copilotkit==0.1.65" 
+"langgraph==0.2.50" 
+"langchain-google-genai==2.0.11" 
+"google-generativeai==0.8.3" 
+"python-dotenv==1.0.1" 
+"requests==2.32.3" 
+"pydantic==2.10.4" 
+"langchain-core==0.3.26" 
