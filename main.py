@@ -16,6 +16,7 @@ from stack_agent import stack_analysis_graph
 
 app = FastAPI()
 
+
 sdk = CopilotKitSDK(
     agents=[
         LangGraphAgent(
@@ -33,25 +34,29 @@ sdk = CopilotKitSDK(
 
 add_fastapi_endpoint(app, sdk, "/copilotkit")
 
+
 @app.get("/healthz")
 def health():
     """Health check."""
     return {"status": "ok"}
+
 
 @app.get("/")
 def root():
     """Root endpoint."""
     return {"message": "Hello, World!"}
 
+
 def main():
     """Run the uvicorn server."""
-    port = int(os.getenv("PORT", "10000"))  # Render uses port 10000
+    port = int(os.getenv("PORT", "8000"))
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
         port=port,
-        reload=False,  # Disable reload in production
+        reload=True,
     )
+
 
 if __name__ == "__main__":
     main()
